@@ -1,0 +1,1395 @@
+
+
+
+
+
+/* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты */
+
+@font-face {
+	font-family: 'Cube';
+	src: url('../font/PressStart2P.ttf');
+	src: local('☺'), url('../font/PressStart2P.ttf') format('woff'), url('../font/PressStart2P.ttf') format('truetype'), url('../font/PressStart2P.ttf') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты *//* Шрифты */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   <Анимации>   */
+
+@keyframes Anim-Menu-1{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes Anim-Menu-2{
+	0%{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	
+	100%{
+		opacity: 1;
+		margin-top: 15px;
+	}
+}
+
+@keyframes Anim-Volna{
+	0%{
+		position: relative;
+		top: 0px;
+	}
+	
+	50%{
+		position: relative;
+		top: -5px;
+	}
+	
+	100%{
+		position: relative;
+		top: 0px; 
+	}
+}
+
+
+
+
+
+@keyframes text {
+	from {
+		        clip-path: inset(0 100% 0 0);
+	}
+	to {
+		        clip-path: inset(0 0 0 0);
+	}
+}
+
+
+
+
+@keyframes revealer {
+	
+	0%, 50% {
+		        transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		        transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		        transform: scaleX(1);
+	}
+	
+	100% {
+		        transform: scaleX(0);
+	}
+}
+
+
+
+/*
+-webkit-animation: Anim-Menu-1 2s forwards;
+    -o-animation: Anim-Menu-1 2s forwards;
+    animation: Anim-Menu-1 2s forwards;
+
+/*
+
+
+ /*   </Анимации>   */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты */
+
+body{
+	font-family: 'Cube';
+}
+
+
+.tel-media{
+	display: none;
+}
+
+.tel-media-2{
+		display: none;
+	}
+.tel-media-3{
+		display: none;
+	}
+
+.box-right ul{
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+
+.box-left ul{
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}
+
+.Section-Container{
+	border: 1px solid white;
+	width: 100%;
+	box-shadow: 0px 0px 20px rgba(1,1,1,0.7);
+	position: relative;
+	z-index: 99;
+}
+
+.Section-Container-Text{
+	font-size: 22px;
+	margin-top: 10%;
+}
+
+.Section-Container-Text-2{
+	font-size: 22px;
+	margin-top: 15%;
+}
+
+.Section-Container-Text-3{
+	font-size: 22px;
+	margin-top: 10%;
+	padding-bottom: 100px;
+}
+
+.Section-Container-IMG-1{
+	padding-top: 30px ;
+	padding-bottom: 30px ;
+	
+}
+
+.Section-Container-IMG-2{
+	position: relative;
+	top: 32px;
+}
+
+.Section-Container-IMG-3{
+	position: relative;
+	top: 65px;
+	height: 200px;
+}
+
+.Left-JS-1{
+	position: relative;
+	left: 0px;
+}
+
+/* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты *//* Общие компоненты */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню */
+
+.menu{
+	width: 100%;
+	height: 60px;
+	background-color: #0bb449;
+	color: white;
+	position: fixed;
+	z-index: 100;
+}
+
+.menu-stabilizator{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+}
+
+.Menu-Text-1{
+	font-size: 20px;
+	-webkit-animation: Anim-Menu-2 2s forwards;
+    -o-animation: Anim-Menu-2 2s forwards;
+    animation: Anim-Menu-2 2s forwards;
+	opacity: 0;
+	animation-delay: 2s;
+}
+
+.Menu-Text-1-tel{
+	font-size: 20px;
+	-webkit-animation: Anim-Menu-2 2s forwards;
+    -o-animation: Anim-Menu-2 2s forwards;
+    animation: Anim-Menu-2 2s forwards;
+	opacity: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding-left: 20px ;
+	padding-right:20px ;
+}
+
+.menu-spisoc button{
+	background: rgba(1,1,1,0.1);
+	border: 1px solid rgba(1,1,1,0);
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.menu-spisoc button:hover{
+	background: rgba(1,1,1,0.2);
+	border: 1px solid rgba(1,1,1,0);
+}
+
+.menu-spisoc button:focus{
+	background: rgba(1,1,1,0.2);
+	border: 1px solid rgba(1,1,1,0);
+}
+
+.menu-spisoc button:active{
+	background: rgba(1,1,1,0.2);
+	border: 1px solid rgba(1,1,1,0);
+}
+
+.menu-spisoc button:link{
+	background: rgba(1,1,1,0.2);
+	border: 1px solid rgba(1,1,1,0);
+}
+
+
+
+
+.menu-anim-1 li{
+	-webkit-animation: Anim-Menu-1 2s forwards;
+    -o-animation: Anim-Menu-1 2s forwards;
+    animation: Anim-Menu-1 2s forwards;
+	opacity: 0;
+}
+
+.menu-anim-1 li:nth-child(2){
+	animation-delay: 0.4s
+}
+
+.menu-anim-1 li:nth-child(3){
+	animation-delay: 0.8s
+}
+
+.menu-anim-1-2 li{
+	-webkit-animation: Anim-Menu-1 2s forwards;
+    -o-animation: Anim-Menu-1 2s forwards;
+    animation: Anim-Menu-1 2s forwards;
+	opacity: 0;
+}
+
+.menu-anim-1-2 li:nth-child(1){
+	animation-delay: 1.2s
+}
+
+.menu-anim-1-2 li:nth-child(2){
+	animation-delay: 1.6s
+}
+
+.menu-anim-1-2 li:nth-child(3){
+	animation-delay: 2s
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reveal,
+.reveal::after {
+	        animation-delay: 0;
+	        animation-delay: var(--animation-delay, 0.5s);
+	        animation-iteration-count: 1;
+	        animation-iteration-count: var(--iterations, 1);
+	        animation-duration: 8s;
+	        animation-duration: var(--duration, 8s);
+	        animation-fill-mode: both;
+	        animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+
+.reveal {
+	position: relative;
+	animation-name: text;
+	cursor: default;
+	
+}
+
+.reveal::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(1,1,1,0);
+		        transform: scaleX(0);
+		        transform-origin: 0 50%;
+		pointer-events: none;
+		        animation-name: revealer;
+	}
+
+
+
+.title-timer{
+	animation-delay: 1s;
+}
+
+.title-timer-2{
+	animation-delay: 1.5s;
+}
+
+
+/* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню *//* Меню */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник */
+
+.Title{
+	width: 60%;
+	height: 850px;
+	background-color: #c1ffa6;
+}
+
+.Title-Text-1{
+	margin-top: 20%;
+	font-size: 40px;
+}
+
+.Title-Text-2{
+	margin-top: 20px;
+}
+
+.Title-Button{
+	margin-top: 20px;
+}
+
+.Title-Button Button{
+	width: 400px;
+	height: 50px;
+	border: 1px solid #65964f;
+	color: #65964f;
+}
+
+.Title-Button Button:hover{
+	background: #65964f;
+	border: 1px solid #65964f;
+}
+
+.Construct-Box{
+	background: #9ecf88;
+	width: 85px;
+	height: 85px;
+}
+
+.Title-Construct{
+	position: absolute;
+	top: 60px;
+	left: 60%;
+	z-index: -10;
+}
+
+.Box-1{
+	position: relative;
+	right: 20px;
+}
+
+.Box-2{
+	position: relative;
+	right: 10px;
+}
+
+.Box-3{
+	position: relative;
+	right: 0px;
+}
+
+.Box-4{
+	position: relative;
+	right: 30px;
+}
+
+.Box-5{
+	position: relative;
+	right: 20px;
+}
+
+.Box-6{
+	position: relative;
+	right: 10px;
+}
+
+.Box-7{
+	position: relative;
+	right: 30px;
+}
+
+.Box-8{
+	position: relative;
+	right: 0px;
+}
+
+.Box-9{
+	position: relative;
+	right: 10px;
+}
+
+.Box-10{
+	position: relative;
+	right: 0px;
+}
+
+.Title-image{
+	position: absolute;
+	top:60px;
+	right:0px;
+	z-index: -100;
+	height: 850px;
+	width: 40%;
+	border: 1px solid rgba(1,1,1,0);
+	background-image: url(../img/1Title/4Ground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник *//* Титульник */
+
+
+
+
+
+
+
+/* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки */
+
+.Skill-Img img{
+	height: 300px;
+	margin-top: 20%;
+	-webkit-animation: Anim-Volna 2s infinite;
+    -o-animation: Anim-Volna 2s infinite;
+    animation: Anim-Volna 2s infinite;
+}
+
+.Skill-Text{
+	font-size: 40px;
+	margin-top: 5%;
+}
+
+/* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки *//* Навыки */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты */
+
+.Site{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.Site-IMG-L{
+	position: absolute;
+	top: 20%;
+	z-index: -100;
+	left: 0px;
+	height: 300px;
+}
+
+.Site-IMG-R{
+	position: absolute;
+	top: 20%;
+	z-index: -100;
+	right: 0px;
+	height: 300px;
+}
+
+.Site-Name{
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.Site-Company{
+	margin-top: 10px;
+}
+
+
+.Site-Button-L{
+	position: absolute;
+	top: 500px;
+	left: 0px;
+	background-color: rgba(1,1,1,0)
+}
+
+.Site-Button-R{
+	position: absolute;
+	top: 500px;
+	right: 0px;
+	background-color: rgba(1,1,1,0)
+
+}
+/* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты *//* Сайты */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки */
+
+.Skill-Img-2 img{
+	height: 150px;
+	margin-top: 40%;
+	-webkit-animation: Anim-Volna 2s infinite;
+    -o-animation: Anim-Volna 2s infinite;
+    animation: Anim-Volna 2s infinite;
+}
+
+.Skill-0{
+	font-size: 70px;
+	margin-top: 20px;
+}
+
+.Skill-Text-2{
+	font-size: 20px;
+}
+
+/* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки *//* 2 Навыки */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы */
+
+.Otzuv-Text-1{
+	margin-top: 20px;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.Otzuv-Block{
+	border: 1px solid black;
+}
+
+.Otzuv-Block-2{
+	padding-bottom: 200px;
+}
+
+
+
+.carousel-indicators button{
+	position: relative;
+	top: 100px;
+}
+
+.carousel-indicators [data-bs-target]{
+	width: 150px;
+	height: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.Otzuv-Otstup-Img{
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.Otzuv-Name{
+	font-size: 25px;
+}
+
+/* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы *//* Отзывы */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт */
+
+.Rascet{
+	position: relative;
+}
+
+.Otzuv-Block-3{
+	padding-bottom: 20px;
+}
+
+.Rascet-Text-1{
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.Rascet-Section{
+	margin-top: 20px;
+}
+
+.Rascet-Section select{
+	background: rgba(1,1,1,0.1);
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgba(1,1,1,0.5);
+}
+
+.Rascet-Text-2{
+	margin-top: 30px;
+}
+
+.Rascet-0{
+	font-size: 25px;
+}
+
+.Rascet-Otstup-L{
+	position: relative;
+	right:50px;
+}
+
+.Rascet-Otstup-R{
+	position: relative;
+	left:20px;
+}
+
+.Rascet-Otstup{
+	margin-top: 20px;
+}
+
+/* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт *//* Расчёт */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Contact-Text-1{
+	font-size:50px;
+	margin-top: 100px;
+}
+
+.Contact-Otstup{
+	margin-top: 100px;
+}
+.Contact-Text{
+	margin-top: 100px;
+	font-size: 20px;
+}
+
+.Contact-Button button{
+	border: 1px solid black;
+	color: black;
+}
+
+.Contact-Button button:hover{
+	border: 1px solid black;
+	background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background: #0bb449;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+/* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность */
+
+
+
+
+@media(max-width: 1600px){
+	
+	.Contact-Text-1{
+	font-size:40px;
+	margin-top: 20px;
+}
+
+.Contact-Otstup{
+	margin-top: 70px;
+}
+.Contact-Text{
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+/* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px */
+
+@media(max-width: 1399px){
+	
+	.Skill-Img img{
+	height: 200px;
+	margin-top: 20%;
+}
+
+.Skill-Text{
+	font-size: 30px;
+	margin-top: 5%;
+}
+	
+	
+	
+	
+	
+	
+	.Skill-Img-2 img{
+	height: 100px;
+	margin-top: 20%;
+}
+
+.Skill-0{
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.Contact-Text-1{
+	font-size:40px;
+	margin-top: 20px;
+}
+
+.Contact-Otstup{
+	margin-top: 70px;
+}
+.Contact-Text{
+	margin-top: 20px;
+	font-size: 20px;
+}
+	
+	
+	
+	
+	
+	.Site-Button-L img{
+	height: 150px;
+}
+
+.Site-Button-R img{
+	height: 150px;
+
+}
+}
+
+/* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px *//* 1399px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px */
+
+@media(max-width: 1199px){
+	.box-right ul{
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	
+}
+
+.box-left ul{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+}
+	
+	.navbar-expand-lg .navbar-nav .nav-link{
+	padding-left: 20px;
+	padding-right:20px;
+}
+	
+	.Title-Text-1{
+		font-size: 30px;
+	}
+	.Title-Text-2{
+		font-size: 10px;
+	}
+	.Title{
+	height: 700px;
+}
+	.Construct-Box{
+	width: 70px;
+	height: 70px;
+}
+	.Title-image{
+	height: 700px;
+}
+	
+	
+	
+	
+	.Site-IMG-L{
+	top: 10%;
+	height: 300px;
+}
+
+.Site-IMG-R{
+	top: 10%;
+	height: 200px;
+}
+	
+	
+	
+	.Contact-Text-1{
+	font-size:40px;
+	margin-top: 0px;
+}
+
+.Contact-Otstup{
+	margin-top: 0px;
+}
+.Contact-Text{
+	margin-top: 0px;
+	font-size: 20px;
+}
+	
+	#myImg{
+		margin-bottom: 200px;
+	}
+	
+	.Site-Button-L{
+	top: 500px;
+	left: 30%;
+}
+
+.Site-Button-R{
+	top: 500px;
+	right: 30%;
+
+}
+}
+
+/* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px *//* 1199px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px */
+
+@media(max-width: 991px){
+	.pc-media{
+		display: none;
+	}
+	
+	.tel-media{
+		display: block;
+	}
+	
+	
+	.Title-Text-1{
+		margin-top: 15%;
+		font-size: 25px;
+	}
+	.Title-Text-2{
+		font-size: 10px;
+	}
+	.Title{
+	
+	height: 500px;
+}
+	.Construct-Box{
+	width: 50px;
+	height: 50px;
+}
+	.Title-image{
+	height: 500px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	.Section-Container-IMG-1{
+		height: 300px;
+		text-align: center;
+	}
+	
+	.Section-Container-Text{
+		padding-bottom: 30px;
+	}
+	
+	.Section-Container-Text-2{
+		padding-bottom: 30px;
+	}
+	
+	.Skill{
+		background-image: url(../img/2Mogu/background.jpg)
+	}
+	
+	.Section-Container-IMG-2{
+		height: 300px;
+		text-align: center;
+		padding-bottom: 60px;
+	}
+	
+	
+	.Section-Container-IMG-3{
+	top: 0px;
+	height: 300px;
+		text-align: center;
+}
+	
+	.Skill-2{
+		background-image: url(../img/4Skill/background.jpg);
+		padding-bottom: 50px;
+	}
+	
+	.Contact{
+		background-image: url(../img/6Contact/background.jpg);
+		padding-bottom: 50px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.Contact-Text-1{
+	font-size:40px;
+	margin-top: 30px;
+}
+
+.Contact-Otstup{
+	margin-top: 30px;
+}
+.Contact-Text{
+	margin-top: 20px;
+	font-size: 20px;
+}
+	
+	
+	
+	#myImg-tel{
+		margin-bottom: 150px;
+	}
+	
+	.Site-Button-L{
+	top: 350px;
+	left: 10%;
+}
+
+.Site-Button-R{
+	top: 350px;
+	right: 10%;
+
+}
+}
+
+/* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px *//* 991px */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px */
+
+@media(max-width: 767px){
+	.Title-Button button{
+		width: 95%;
+	}
+	
+	.Section-Container-IMG-3{
+	top: 0px;
+	height: 200px;
+		text-align: center;
+}
+	
+	.pc-media-3{
+		display:none;
+	}
+	
+	.tel-media-3{
+		display: block;
+	}
+	
+	footer{
+	background: #0bb449;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+}
+	
+	.Site-Button-L{
+	top: 300px;
+	left: 10%;
+}
+
+.Site-Button-R{
+	top: 300px;
+	right: 10%;
+
+}
+}
+
+/* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px *//* 767px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px */
+
+@media(max-width: 500px){
+	.pc-media-2{
+		display: none;
+	}
+	
+	.tel-media-2{
+		display: block;
+	}
+	
+	
+	
+	
+	
+	
+	.Title-Construct{
+		display: none;
+	}
+	
+	.Title-image{
+		display: none;
+	}
+	
+	.Title{
+		width: 100%;
+	}
+	
+	
+	
+	
+	
+	
+	.Site-Button-L{
+	top: 250px;
+	left: 0px;
+}
+
+.Site-Button-R{
+	top: 250px;
+	right: 0px;
+
+}
+	
+	
+	
+	.carousel-indicators [data-bs-target]{
+	width: 150px;
+	height: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+	
+	
+	.Section-Container-IMG-3{
+	top: 0px;
+	height: 150px;
+		display: inline-block;
+		text-align: center;
+}
+	
+}
+
+/* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px *//* 500px */
+
+
+
+
+
+
+
+
+
+@media(max-width: 450px){
+	.Site-Button-L{
+	top: 200px;
+	left: 0px;
+}
+
+.Site-Button-R{
+	top: 200px;
+	right: 0px;
+
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность *//* Адаптивность */
+
+
+
+.Section-anim{
+    opacity: 0;
+}
+
+.Section-anim.show{
+    opacity: 1;
+	transition: opacity 1s;
+}
